@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="248dp"
+    android:layout_marginTop="8dp"
+    android:layout_marginLeft="16dp"
+    android:layout_marginRight="16dp"
+    android:layout_marginBottom="8dp">
+
+    <LinearLayout
+        android:layout_height="248dp"
+        android:layout_width="match_parent"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/iv_listitem_pic_of_route"
+            android:src="@drawable/sable_icon"
+            android:scaleType="centerCrop"
+            android:layout_marginRight="8dp"
+            android:layout_width="168dp"
+            android:layout_height="248dp"/>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="248dp"
+            android:layout_weight="1"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_listitem_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="30sp"
+                tools:text="Name"/>
+
+            <TextView
+                android:id="@+id/tv_listitem_rating_and_color"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="24sp"
+                tools:text="Blue V2"/>
+
+            <TextView
+                android:id="@+id/tv_listitem_type_of_route"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                tools:text="Boulder"/>
+
+            <TextView
+                android:id="@+id/tv_listitem_location"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="24sp"
+                tools:text="Memphis Rox"/>
+
+            <TextView
+                android:id="@+id/tv_listitem_description"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:maxLines="4"
+                android:ellipsize="end"
+                android:textSize="16sp"
+                tools:text="Description" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

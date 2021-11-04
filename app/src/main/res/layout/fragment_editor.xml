@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".EditorActivity.EditorActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="4dp"
+                    android:layout_marginTop="4dp"
+                    android:text="@string/title_header"
+                    android:textSize="16sp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <EditText
+                        android:id="@+id/et_addactivity_title"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:layout_marginLeft="4dp"
+                        android:layout_marginRight="4dp"
+                        android:ellipsize="end"
+                        android:hint="@string/title_hint"
+                        android:inputType="textCapWords"
+                        android:maxLines="1"
+                        android:textSize="20sp" />
+
+                    <ImageButton
+                        android:id="@+id/ib_addactivity_favorite"
+                        android:src="@drawable/ic_baseline_favorite_border_36"
+                        style="?android:attr/borderlessButtonStyle"
+                        android:background="?attr/selectableItemBackgroundBorderless"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_marginBottom="8dp"
+                        android:layout_marginRight="4dp"/>
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <ImageButton
+                        android:id="@+id/ib_addactivity_pic"
+                        style="?android:attr/borderlessButtonStyle"
+                        android:layout_width="0dp"
+                        android:layout_height="324dp"
+                        android:layout_marginLeft="4dp"
+                        android:layout_marginTop="4dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/custom_ripple"
+                        android:scaleType="center"
+                        android:src="@drawable/ic_baseline_add_a_photo_24" />
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="324dp"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="4dp"
+                            android:text="@string/type_header"
+                            android:textSize="16sp" />
+
+                        <Spinner
+                            android:id="@+id/sp_addactivity_type_of_route"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="4dp"
+                            android:layout_marginTop="4dp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="4dp"
+                            android:layout_marginTop="4dp"
+                            android:text="@string/rating_header"
+                            android:textSize="16sp" />
+
+                        <Spinner
+                            android:id="@+id/sp_addactivity_rating"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="4dp"
+                            android:layout_marginTop="4dp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="4dp"
+                            android:layout_marginTop="4dp"
+                            android:text="@string/color_header"
+                            android:textSize="16sp" />
+
+                        <EditText
+                            android:id="@+id/et_addactivity_route_color"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="4dp"
+                            android:layout_marginRight="4dp"
+                            android:ellipsize="end"
+                            android:hint="Color"
+                            android:inputType="textCapWords"
+                            android:maxLines="1"
+                            android:textSize="20sp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="4dp"
+                            android:layout_marginTop="4dp"
+                            android:text="@string/where_header"
+                            android:textSize="16sp" />
+
+                        <EditText
+                            android:id="@+id/et_addactivity_location"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="4dp"
+                            android:layout_marginRight="4dp"
+                            android:ellipsize="end"
+                            android:hint="@string/where_hint"
+                            android:inputType="textCapWords"
+                            android:maxLines="1"
+                            android:textSize="20sp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="4dp"
+                            android:layout_marginTop="4dp"
+                            android:text="@string/who_climbed_header"
+                            android:textSize="16sp" />
+
+                        <EditText
+                            android:id="@+id/et_addactivity_who_climbed"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="4dp"
+                            android:layout_marginRight="4dp"
+                            android:ellipsize="end"
+                            android:hint="Person's Name"
+                            android:inputType="textCapWords"
+                            android:maxLines="1"
+                            android:textSize="20sp" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="4dp"
+                    android:layout_marginTop="4dp"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/bu_addactivity_select_date"
+                        style="?android:attr/imageButtonStyle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/select_date_button"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginRight="8dp"
+                        android:text="@string/date_header"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:id="@+id/tv_addactivity_display_date"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@android:color/black"
+                        android:textSize="20sp"
+                        tools:text="7/22/2200" />
+                </LinearLayout>
+
+                <EditText
+                    android:id="@+id/et_addactivity_description"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="4dp"
+                    android:layout_marginTop="4dp"
+                    android:layout_marginRight="4dp"
+                    android:background="@android:color/transparent"
+                    android:ellipsize="end"
+                    android:gravity="top|left"
+                    android:hint="Description..."
+                    android:inputType="textCapSentences|textMultiLine"
+                    android:lineSpacingExtra="4dp"
+                    android:minLines="6"
+                    android:singleLine="false"
+                    android:textSize="20sp" />
+
+            </LinearLayout>
+        </ScrollView>
+
+
+    </LinearLayout>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

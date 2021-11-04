@@ -1,0 +1,71 @@
+<resources>
+    <string name="app_name">Sent It</string>
+
+    <!--  ADD ROUTE ACTIVITY STRING VALUES  -->
+
+    <!--  Header and hint for name category  -->
+    <string name="title_header">Name:</string>
+    <string name="title_hint">Name</string>
+
+    <!--  Header for the type of route category  -->
+    <string name="type_header">Type:</string>
+
+    <!--  Header for the rating category  -->
+    <string name="rating_header">Rating:</string>
+
+    <!--  Header and hint values for the location category  -->
+    <string name="where_header">Where:</string>
+    <string name="where_hint">Location</string>
+
+    <!--  Header for the who climbed category  -->
+    <string name="who_climbed_header">Who Climbed:</string>
+
+    <!--  Header, button text, and tag for the date category  -->
+    <string name="date_header">Date:</string>
+    <string name="select_date_button">Select Date</string>
+    <string name="date_picker">date_picker</string>
+
+<!--  List of types of routes that is used with the type of route spinner  -->
+    <string-array name="types_of_routes">
+        <item>Boulder</item>
+        <item>Top-Rope</item>
+        <item>Lead</item>
+    </string-array>
+
+<!--  List of ratings for Boulder routes that is used with the ratings spiner  -->
+    <string-array name="ratings_boulder">
+        <item>V0</item>
+        <item>V1</item>
+        <item>V2</item>
+        <item>V3</item>
+        <item>V4</item>
+        <item>V5</item>
+        <item>V6</item>
+        <item>V7</item>
+        <item>V8</item>
+        <item>V9</item>
+        <item>V10</item>
+    </string-array>
+
+<!--  List of ratings for Top-Rope and Lead climbing for the ratings spinner  -->
+    <string-array name="ratings_toprope">
+        <item>5.6</item>
+        <item>5.7</item>
+        <item>5.8</item>
+        <item>5.9</item>
+        <item>5.10</item>
+        <item>5.11</item>
+        <item>5.12</item>
+        <item>5.13</item>
+    </string-array>
+
+    <!-- Title for MainActivity  -->
+    <string name="mainactivity_title">Sent It</string>
+
+    <!-- Title for AddRouteActivity  -->
+    <string name="addroute_activity_title">Route Editor</string>
+
+    <!-- Title for FullScreenImageActivity  -->
+    <string name="fullscreen_activity_title">Full Screen Route</string>
+    <string name="color_header">Color:</string>
+</resources>
